@@ -1,17 +1,31 @@
 package no.hvl.dat100.lab5.tabeller;
 
-public class Tabeller {
+public class Tabeller {		
 
-	// a)
+public static void main(String[] args) {
+	
+	int[] tabell = {1,2,3,4,5,6,7,8,9};
+
+	skrivUt(tabell);
+
+}
+	// a) 
 	public static void skrivUt(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
 
-	}
+		System.out.print("[ ");
+		for(int i = 0; i<tabell.length-1;i++){
+			System.out.print(tabell[i] + " ");
+		}
+		System.out.println("]");
+
+		}
+
 
 	// b)
 	public static String tilStreng(int[] tabell) {
+
+
 
 		// TODO
 		throw new UnsupportedOperationException("tilStreng ikke implementert");
