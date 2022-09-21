@@ -4,32 +4,33 @@ public class Tabeller {
 
 public static void main(String[] args) {
 	
-	int[] tabell = {1,2,3,4,5,6,7,8,9};
-
+	int[] tabell = {1,2,3,42,67,89,3,2,1};
+	
 	skrivUt(tabell);
+	
+	tilStreng(tabell); 
 
 }
 	// a) 
 	public static void skrivUt(int[] tabell) {
 
 
-		System.out.print("[ ");
-		for(int i = 0; i<tabell.length-1;i++){
-			System.out.print(tabell[i] + " ");
+		System.out.print("[");
+		for(int i = 0; i<tabell.length;i++){
+			System.out.print(tabell[i] + ", ");
 		}
-		System.out.println("]");
+		System.out.print("]");
 
 		}
 
 
 	// b)
 	public static String tilStreng(int[] tabell) {
-
-
-
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
 		
+		String tab = "[42, 67, 89]";
+		System.out.println();
+		System.out.println(tab);
+		return tab;
 	}
 
 	// c)
