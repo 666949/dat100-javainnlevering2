@@ -76,16 +76,14 @@ public class Tabeller {
 	}
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
-		int minstePos = 0;
 		
 		for (int i = 0; i < tabell.length; i++) {
-			if (tabell[i] < tabell[minstePos]) {
-				minstePos = i;
-				} else {
-					return -1; 
-				}
+			if (tabell[i] == tall) {
+				return i;
 			}
-		return minstePos; 
+	}
+		return -1;
+
 	}
 	// f)
 	public static int[] reverser(int[] tabell) {
