@@ -5,9 +5,14 @@ public class Matriser {
 	// a)
 	public static void skrivUt(int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
-	}
+		for(int i=0; i<matrise.length; i++)
+			for(int j=0; j<i; j++) {
+				int h = matrise[i][j];
+				matrise[j][i] = h; 
+		}
+		
+		
+			}
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
