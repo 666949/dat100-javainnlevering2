@@ -75,21 +75,30 @@ public class Tabeller {
 		return finnes; 
 	}
 	// e)
-	public static int posisjonTall(int[] tabell, int tall) {		
+
+	public static int posisjonTall(int[] tabell, int tall) {
+		
 		for (int i = 0; i < tabell.length; i++) {
 			if (tabell[i] == tall) {
-				return i; 
-				}
+				return i;
 			}
-		return -1; 
+	}
+		return -1;
+
+
 	}
 	// f)
 	public static int[] reverser(int[] tabell) {
 		
-        for (int i = 0; i < tabell.length / 2; i++) {
-            
-        }
-        return tabell;
+
+		int[] reversertTabell = new int[tabell.length];
+		
+		for (int i = tabell.length - 1; i >= 0; i--) {
+			reversertTabell[(tabell.length-1)-i] = tabell[i];
+		}
+		return reversertTabell;
+		
+
 	}
 	// g)
 	public static boolean erSortert(int[] tabell) {

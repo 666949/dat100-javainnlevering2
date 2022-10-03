@@ -5,9 +5,16 @@ public class Matriser {
 	// a)
 	public static void skrivUt(int[][] matrise) {
 		
+
+		for(int i=0; i<matrise.length; i++)
+			for(int j=0; j<i; j++) {
+				int h = matrise[i][j];
+				matrise[j][i] = h; 
+		}
 		
 		
-	}
+			}
+
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
