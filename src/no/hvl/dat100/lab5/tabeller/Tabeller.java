@@ -75,28 +75,19 @@ public class Tabeller {
 		return finnes; 
 	}
 	// e)
-	public static int posisjonTall(int[] tabell, int tall) {
-		int minstePos = 0;
-		
+	public static int posisjonTall(int[] tabell, int tall) {		
 		for (int i = 0; i < tabell.length; i++) {
-			if (tabell[i] < tabell[minstePos]) {
-				minstePos = i;
-				} else {
-					return -1; 
+			if (tabell[i] == tall) {
+				return i; 
 				}
 			}
-		return minstePos; 
+		return -1; 
 	}
 	// f)
 	public static int[] reverser(int[] tabell) {
 		
-		if(tabell == null || tabell.length <= 1){
-            System.out.println("Ugyldig tabell.");
-        }
         for (int i = 0; i < tabell.length / 2; i++) {
-            int temp = tabell[i];
-            tabell[i] = tabell[tabell.length - 1 - i];
-            tabell[tabell.length - 1 - i] = temp;
+            
         }
         return tabell;
 	}
